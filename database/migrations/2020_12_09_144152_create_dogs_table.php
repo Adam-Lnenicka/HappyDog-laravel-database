@@ -15,10 +15,10 @@ class CreateDogsTable extends Migration
     {
         Schema::create('dogs', function (Blueprint $table) {
             $table->id();
-            $table->string('breed');
-            $table->unsignedInteger('name');
-            $table->unsignedInteger('age');
-            $table->unsignedInteger('weight');
+            $table->string('breed')->nullable();
+            $table->unsignedInteger('name')->nullable();
+            $table->unsignedInteger('age')->nullable();
+            $table->unsignedInteger('weight')->nullable();
             $table->timestamps();
         });
     }

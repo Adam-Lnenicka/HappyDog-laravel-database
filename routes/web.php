@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'DogController@index');
+Route::get('/create', 'DogController@create');
+Route::post('/', 'DogController@store');
+Route::destroy('/', 'DogController@index');

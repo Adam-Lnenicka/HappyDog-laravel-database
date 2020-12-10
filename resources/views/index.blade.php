@@ -9,3 +9,5 @@
 @endforeach
 
 <a href="{{action('DogController@create')}}">create a dog</a>
+
+<a href="{{action('DogController@edit ')}}">create a dog</a>

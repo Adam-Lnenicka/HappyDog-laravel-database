@@ -1,3 +1,7 @@
+@extends('layout')
+
+@section('content')
+
 <h1>Create a new member</h1>
 
 <form action ="{{action('DogController@store')}}" method ="post">
@@ -21,3 +25,5 @@
     </br>
     <button type="submit">Create a new member</button>
 </form>
+
+@endsection

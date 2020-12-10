@@ -15,6 +15,10 @@ class DogController extends Controller
         return view('index', compact('dogs'));
     }
 
+    public function show($id)
+    {
+        $dogs = Dog::findOrFail($id);
+    }
 
     public function create()
     {
@@ -22,6 +26,18 @@ class DogController extends Controller
     }
 
     public function store(Request $request)
+    {
+        $dog = new Dog;
+        $dog->name = $request->input('name');
+        $dog->breed = $request->input('breed');
+        $dog->age = $request->input('age');
+        $dog->save();
+
+        return redirect(action('DogController@index'));
+    }
+
+    public function edit()
+
     {
         $dog = new Dog;
         $dog->name = $request->input('name');

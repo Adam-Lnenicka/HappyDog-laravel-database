@@ -20,4 +20,6 @@ Route::get('/', function () {
 Route::get('/', 'DogController@index');
 Route::get('/create', 'DogController@create');
 Route::post('/', 'DogController@store');
-Route::destroy('/', 'DogController@index');
+// Route::destroy('/', 'DogController@index');
+Route::get('/show/{id}', 'DogController@show');
+Route::delete('/categories/{id}', 'CategoryController@destroy');

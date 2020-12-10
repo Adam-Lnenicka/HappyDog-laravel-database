@@ -22,4 +22,6 @@ Route::get('/create', 'DogController@create');
 Route::post('/', 'DogController@store');
 // Route::destroy('/', 'DogController@index');
 Route::get('/show/{id}', 'DogController@show');
-Route::delete('/categories/{id}', 'CategoryController@destroy');
+Route::delete('/', 'DogController@destroy');
+Route::get('/{id}/edit', 'DogController@edit');
+Route::put('/', 'DogController@update');

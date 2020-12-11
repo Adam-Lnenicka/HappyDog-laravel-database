@@ -16,9 +16,11 @@ class CreateDogsTable extends Migration
         Schema::create('dogs', function (Blueprint $table) {
             $table->id();
             $table->string('breed')->nullable();
-            $table->unsignedInteger('name')->nullable();
+            $table->string('name')->nullable();
             $table->unsignedInteger('age')->nullable();
             $table->unsignedInteger('weight')->nullable();
+            $table->string('image_path')->nullable();
+            $table->unsignedInteger('owner_id')->nullable(); 
             $table->timestamps();
         });
     }

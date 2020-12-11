@@ -1,3 +1,40 @@
-*{
-    background-color:red;
+body{
+    background-color:pink;
+    font-family: Nunito;
+}
+
+main{
+    max-width:800px;
+    margin: 0 auto;
+}
+
+.info{
+    background-color: gray;
+    padding: 1em;
+    border-radius:0.5em;
+
+}
+
+.image-frame{
+    height:300px;
+    width:200px;
+    border-radius:3em;
+    border: 1px solid black;
+    object-fit: cover;
+}
+
+img{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    object-fit: cover;
+}
+
+a {
+    margin: 1em;
+    padding: 2em;
+    background-color: orange;
+    border-radius:1em;
+    color: black;
+    text-decoration:none;
 }

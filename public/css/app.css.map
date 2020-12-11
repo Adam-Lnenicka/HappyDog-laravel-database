@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./resources/scss/C:/web/bootcamp/coding-exc/HappyDog-Laravel-React/resources/scss/C:/web/bootcamp/coding-exc/HappyDog-Laravel-React/resources/scss/app.scss"],"names":[],"mappings":"AAAA;EACI","file":"/css/app.css","sourcesContent":["body{\r\n    background-color:pink;\r\n}"],"sourceRoot":""}

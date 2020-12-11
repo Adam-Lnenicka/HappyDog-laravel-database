@@ -4,14 +4,29 @@
 
 <h1>All Dogs</h1>
 
-@foreach($dogs as $dog)
-     <p> <a href="{{action('DogController@show', [$dog->id])}}">Name:  {{$dog->name}}</a> </p> 
-     <p> Age:  {{$dog->age}} </p> 
-     <p> Breed:  {{$dog->breed}} </p> 
-     <p> Weight:  {{$dog->weight}}</p>
-     <p> Age  {{$dog->age}}</p>
-@endforeach
+<table>
+     <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Breed</th>
+          <th>Weight</th>
+          <th>Age</th>
+     </tr>
 
+
+     
+     @foreach($dogs as $dog)
+     <tr>
+          <td> <a href="{{action('DogController@show', [$dog->id])}}">Name:  {{$dog->name}}</a> </td> 
+          <td> Age:  {{$dog->age}} </td> 
+          <td> Breed:  {{$dog->breed}} </td> 
+          <td> Weight:  {{$dog->weight}}</td>
+          <td> Age  {{$dog->age}}</td>
+     </tr>
+     @endforeach
+     
+
+</table>
 <a href="{{action('DogController@create')}}">create a dog</a>
 
 @endsection

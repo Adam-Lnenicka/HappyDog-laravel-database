@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Owner;
+use App\Models\Dog;
 
 class DogSeeder extends Seeder
 {

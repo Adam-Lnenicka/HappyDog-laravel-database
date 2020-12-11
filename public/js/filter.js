@@ -81,34 +81,21 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./resources/scss/app.scss":
-/*!*********************************!*\
-  !*** ./resources/scss/app.scss ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!********************************************************************!*\
-  !*** multi ./resources/js/app/index.jsx ./resources/scss/app.scss ***!
-  \********************************************************************/
+/******/ ([
+/* 0 */,
+/* 1 */
+/*!*********************************************!*\
+  !*** multi ./resources/js/filter/index.jsx ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-!(function webpackMissingModule() { var e = new Error("Cannot find module 'C:\\web\\bootcamp\\coding-exc\\HappyDog-Laravel-React\\resources\\js\\app\\index.jsx'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-module.exports = __webpack_require__(/*! C:\web\bootcamp\coding-exc\HappyDog-Laravel-React\resources\scss\app.scss */"./resources/scss/app.scss");
+!(function webpackMissingModule() { var e = new Error("Cannot find module 'C:\\web\\bootcamp\\coding-exc\\HappyDog-Laravel-React\\resources\\js\\filter\\index.jsx'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 
 /***/ })
-
-/******/ });
-//# sourceMappingURL=app.js.map
+/******/ ]);
+//# sourceMappingURL=filter.js.map
